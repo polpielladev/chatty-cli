@@ -1,0 +1,49 @@
+{
+  "pins" : [
+    {
+      "identity" : "ansiterminal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pakLebah/ANSITerminal.git",
+      "state" : {
+        "revision" : "8e24fab68c660eca1244a95019ec69a11400d62b",
+        "version" : "0.0.3"
+      }
+    },
+    {
+      "identity" : "clack-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/polpielladev/clack-swift",
+      "state" : {
+        "revision" : "0d95ad488a21047dc36a9c0ac7f54338ce0c88ca"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "openai-streaming-completions-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nate-parrott/openai-streaming-completions-swift.git",
+      "state" : {
+        "revision" : "d89966e17627731a2627aff053cc0df86d0022fa",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "fee6933f37fde9a5e12a1e4aeaa93fe60116ff2a",
+        "version" : "1.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}
