@@ -7,7 +7,7 @@ let package = Package(
     name: "ChattyCLI",
     platforms: [.macOS(.v11)],
     products: [
-        .executable(name: "ChattyCLI", targets: ["ChattyCLI"])
+        .executable(name: "chatty", targets: ["ChattyCLI"])
     ],
     dependencies: [
         .package(url: "https://github.com/nate-parrott/openai-streaming-completions-swift.git", exact: "1.0.1"),
