@@ -12,6 +12,6 @@ struct Auth: AsyncParsableCommand {
         let keychain = Keychain(service: "dev.polpiella.chatty")
         keychain["openaitoken"] = token
         
-        outro(text: "✅ You're all set! You can now run " + "`chatty`".magenta.onWhite + "to converse...")
+        outro(text: "✅ You're all set! You can now run " + "`chatty`".magenta.onWhite + " to converse...")
     }
 }

@@ -50,6 +50,7 @@ struct Chat: AsyncParsableCommand {
         write("ChatGPT".bold.gray)
         moveRight()
         write(">".bold.gray)
+        moveRight()
 
         var currentIndex: String.Index?
 
