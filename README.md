@@ -22,6 +22,7 @@ chatty auth
 
 https://user-images.githubusercontent.com/24246926/227801076-e96d8e69-36ac-43bd-aefd-9cba554105a2.mp4
 
+
 🔐 This token will be safely stored in the OSX Keychain and will only be read when needed. Chatty will only know the value of the token for during its execution.
 
 If chatty has already been given a token, you can start a conversation by running chat command:
