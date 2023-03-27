@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - v*
+      - v*.*.*
 
 jobs:
   release:
@@ -12,4 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build executable for release
-        run: swift build -c release --arch arm64 --arch x86_64
+        run: swift build -c release --arch arm64 --arch x86_64 --product chatty
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: .build/apple/Products/Release/chatty
