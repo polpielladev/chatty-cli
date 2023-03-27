@@ -17,3 +17,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: .build/apple/Products/Release/chatty
+          token: ${{ secrets.GITHUB_TOKEN }}
