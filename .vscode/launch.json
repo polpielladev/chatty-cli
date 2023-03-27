@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Debug chatty",
+      "program": "${workspaceFolder:chatty-cli}/.build/debug/chatty",
+      "args": [],
+      "cwd": "${workspaceFolder:chatty-cli}",
+      "preLaunchTask": "swift: Build Debug chatty"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Release chatty",
+      "program": "${workspaceFolder:chatty-cli}/.build/release/chatty",
+      "args": [],
+      "cwd": "${workspaceFolder:chatty-cli}",
+      "preLaunchTask": "swift: Build Release chatty"
+    }
+  ]
+}
