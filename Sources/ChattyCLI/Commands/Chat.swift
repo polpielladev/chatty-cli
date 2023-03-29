@@ -16,6 +16,7 @@ struct Chat: AsyncParsableCommand {
 
         writeln("Hi! 👋 looking for an OpenAI token in the keychain...🔒".cyan)
         let keychain = Keychain(service: "dev.polpiella.chatty")
+            .accessibility(.afterFirstUnlock)
         guard let token = keychain["openaitoken"] else {
             writeln(" ❗️ Something went wrong!  ".onWhite)
             writeln("Could not find an api token, run ".red + "`chatty auth`".magenta.onWhite + " to set it".red)
