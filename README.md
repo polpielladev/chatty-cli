@@ -6,11 +6,23 @@ https://user-images.githubusercontent.com/24246926/227801499-c3729d95-086c-4d7a-
 
 ## Installation
 
-Currently, chatty can only be installed using [Mint 🌱](https://github.com/yonaskolb/Mint):
+There are currently three ways of installing the app: `homebrew`, `mint` and `directly from Github`.
+
+### Homebrew
+
+```bash
+brew install polpielladev/homebrew-tap/chatty-cli
+```
+
+### Mint
 
 ```bash
 mint install polpielladev/chatty-cli@main
 ```
+
+### Manually
+
+Every time a new version is available, a new Github release is created. You can download the latest version of the executable directly from the [releases page](https://github.com/polpielladev/chatty-cli/releases).
 
 ## Usage
 
@@ -21,7 +33,6 @@ chatty auth
 ```
 
 https://user-images.githubusercontent.com/24246926/227801076-e96d8e69-36ac-43bd-aefd-9cba554105a2.mp4
-
 
 🔐 This token will be safely stored in the OSX Keychain and will only be read when needed. Chatty will only know the value of the token for during its execution.
 
