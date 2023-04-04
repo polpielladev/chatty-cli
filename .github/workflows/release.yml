@@ -25,3 +25,5 @@ jobs:
           formula-name: chatty-cli
           homebrew-tap: polpielladev/homebrew-tap
           base-branch: main
+        env:
+          COMMITTER_TOKEN: ${{ secrets.CHATTY_COMMITTER_TOKEN }}
