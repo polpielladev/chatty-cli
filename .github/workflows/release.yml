@@ -13,8 +13,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build executable for release
         run: swift build -c release --arch arm64 --arch x86_64 --product chatty
+      - name: Zip CLI
+        run: tar -czf chatty-cli.tar.gz .build/apple/Products/Release/chatty
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: .build/apple/Products/Release/chatty
+          files: chatty-cli.tar.gz
           token: ${{ secrets.GITHUB_TOKEN }}
