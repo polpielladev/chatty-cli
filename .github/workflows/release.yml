@@ -16,7 +16,6 @@ jobs:
       - name: Compress archive
         run: tar -czf ${{ github.ref_name }}.tar.gz -C .build/apple/Products/Release chatty
       - name: Release
-        id: create-release
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ github.ref_name }}.tar.gz
@@ -26,6 +25,6 @@ jobs:
           formula-name: chatty-cli
           homebrew-tap: polpielladev/homebrew-tap
           base-branch: main
-          download-url: ${{ fromJSON(steps.create-release.outputs.assets)[0].browser_download_url }}
+          download-url: https://github.com/polpielladev/chatty-cli/releases/download/${{ github.ref_name }}/${{ github.ref_name }}.tar.gz
         env:
           COMMITTER_TOKEN: ${{ secrets.CHATTY_COMMITTER_TOKEN }}
