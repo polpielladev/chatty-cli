@@ -26,7 +26,7 @@ Every time a new version is available, a new Github release is created. You can 
 
 ## Usage
 
-Chatty communicates with the [OpenAI API]() to make use of the ChatGPT model. The first time you use the chatty, you will need to give it an API token using the `auth` command:
+Chatty communicates with the [OpenAI API]() to make use of the ChatGPT model. Note you must have an API key with available tokens (either free or pay-as-you-go). You can check your available tokens [here](https://platform.openai.com/account/usage). The first time you use the chatty, you will need to give it an API token using the `auth` command:
 
 ```bash
 chatty auth
