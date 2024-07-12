@@ -1,0 +1,10 @@
+name: Xcode Versions
+
+on: push
+jobs:
+  xcode-versions:
+    runs-on: blaze/macos-14
+    name: Versions
+    steps:
+      - name: Print out Xcode versions
+        run: xcodes installed
