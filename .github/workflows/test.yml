@@ -1,6 +1,7 @@
 name: Xcode Versions
 
-on: push
+on:
+  workflow_dispatch:
 jobs:
   xcode-versions:
     runs-on: blaze/macos-14
